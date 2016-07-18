@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RegressionSuite">
+    <test name="RegressionTest">
+        <classes>
+            <class name="com.expedia.tests.FlightPageAdults">
+
+            </class>
+        </classes>
+    </test>
+</suite>

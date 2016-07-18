@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite">
+    <test name="ExpediaSearchPage">
+        <classes>
+            <class name="com.expedia.tests.HomePageTest1">
+            </class>
+        </classes>
+    </test>
+    <test name="ExpediaSearch5Adults">
+        <classes>
+            <class name="com.expedia.tests.FlightPageAdults"/>
+        </classes>
+    </test>
+</suite>
