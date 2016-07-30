@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="unitTestMyArrayListSuite" >
+    <test name="unitTestMyArrayListTest" preserve-order="true">
+        <classes>
+            <class name="pages.MyArrayListTest">
+                <methods>
+                    <include name="testGet_0"/>
+                    <include name="testGet_9"/>
+                    <include name="testGet_NegativeSize"/>
+                    <include name="testGet_NegativeMinusOne"/>
+                    <include name="testAdd_111"/>
+                    <include name="testInsert_555toIndex5"/>
+                    <include name="testInsert_222toDefaultIndex"/>
+                    <include name="testSize"/>
+                    <include name="testEquals"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

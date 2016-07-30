@@ -47,6 +47,7 @@ public class MyArrayList {
             arr[j+1] = temp;
             temp = temp2;
         }
+        actualSize++;
         resize();
     }
 
@@ -60,6 +61,7 @@ public class MyArrayList {
             arr[j+1] = temp;
             temp = temp2;
         }
+        actualSize++;
         resize();
     }
 
