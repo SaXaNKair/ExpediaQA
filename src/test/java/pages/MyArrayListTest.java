@@ -27,23 +27,19 @@ public class MyArrayListTest {
         Assert.assertEquals(myArrayList.get(9), 10);
     }
 
-    @Test
-    public void testGet_10() {
-        boolean check = false;
-
-        try{
-            myArrayList.get(10);
-        }catch (ArrayIndexOutOfBoundsException e){
-            check = true;
-        }
-        System.out.println(myArrayList.size());
-        //Assert.assertTrue(check);
-        //Assert.assertThrows(IndexOutOfBoundsException.class, );
+    @Test(expectedExceptions = ArrayIndexOutOfBoundsException.class)
+    public void testGet_NegativeSize() {
+            myArrayList.get(myArrayList.size());
     }
 
+    @Test(expectedExceptions = ArrayIndexOutOfBoundsException.class)
+    public void testGet_NegativeMinusOne() {
+        myArrayList.get(-1);
+    }
     @Test
-    public void testAdd() throws Exception {
-
+    public void testAdd_111() throws Exception {
+        myArrayList.add(111);
+        Assert.assertEquals(myArrayList.get(myArrayList.size() -1), 111);
     }
 
     @Test
